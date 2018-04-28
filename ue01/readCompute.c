@@ -24,9 +24,8 @@ int main(int argc, char *argv[]) {
 
   // read the first line by specified pattern
   // from file pointer
-  while (fscanf(file, "%d", &sum) == 1) {
+  if (fscanf(file, "%d", &sum) == 1) {
     printf("Aimed sum is %d\n", sum);
-    break;
   }
 
   // read all consecutive lines with pattern %d*%d

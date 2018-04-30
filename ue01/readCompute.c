@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
     // thus we can multiply them without any
     // further type conversion
     prod = z1 * z2;
-    printf("Intermediate Sum is %d + (%d * %d) = %d\n", csum, z1, z2, prod);
+    printf("Intermediate Sum is %d + (%d * %d) = %d\n", csum, z1, z2, prod+csum);
     // we add the product of z1 and z2 to our intermediate sum
     csum += prod;
   }

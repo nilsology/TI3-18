@@ -17,6 +17,13 @@ int main(int argc, char *argv[])
 
   char *mode = argv[1];
 
+  if (argc < 2)
+  {
+    char err[] = "usage: ./trashcan -(l|d|r|f) <file>\n";
+    write(1, err, strlen(err));
+    return 1;
+  }
+
   // argument handling (only one argument provided)
   if (argc == 2 && strncmp(mode, "-l", 2) == 0)
   {

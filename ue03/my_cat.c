@@ -4,7 +4,7 @@
 #define BUFF_SIZE 2048
 int main(int argc, char const *argv[])
 {
-  FILE* file;
+  FILE *file;
   char buffer[BUFF_SIZE];
 
   if (argc < 2)
